@@ -1,0 +1,9 @@
+.popup__message-icon {
+    width: 120px;
+    height: 120px;
+    margin: 60px auto 32px;
+    background-color: transparent;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}

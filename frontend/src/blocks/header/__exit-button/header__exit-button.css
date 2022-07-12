@@ -1,0 +1,17 @@
+.header__exit-button {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 22px;
+    border: 0;
+    background-color: transparent;
+    margin: 0 0  24px;
+    padding: 0;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.header__exit-button:hover {
+    opacity: .6;
+}

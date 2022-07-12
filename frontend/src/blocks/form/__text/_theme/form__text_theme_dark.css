@@ -1,0 +1,5 @@
+.form__text_theme_dark {
+    border-bottom: 2px solid rgba(204, 204, 204, 1);
+    color: #CCCCCC;
+    margin: 30px auto 0;
+}
