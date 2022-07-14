@@ -7,7 +7,7 @@ const BadRequestError = require('../errors/bad-request-error');
 const AuthDataError = require('../errors/auth-data-error');
 const AuthError = require('../errors/auth-error');
 
-const JWT_SECRET = 'SECRET_PROJECT';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // возвращает всех пользователей
 const getAllUsers = (req, res, next) => {

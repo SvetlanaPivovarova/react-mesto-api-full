@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const { celebrate, Joi, errors } = require('celebrate');
+const dotenv = require('dotenv');
 
 const userRouter = require('./routes/users');
 const cardRouter = require('./routes/cards');
@@ -12,6 +13,8 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 const NotFoundError = require('./errors/not-found-error');
 const errorsHandler = require('./errors/error-handler');
 const cors = require('./middlewares/cors');
+
+dotenv.config();
 
 // Слушаем 3000 порт
 const { PORT = 3000 } = process.env;

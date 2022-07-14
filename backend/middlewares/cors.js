@@ -10,6 +10,9 @@ const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
 const cors = (req, res, next) => {
   const { origin } = req.headers;
   const { method } = req;
+  const requestHeaders = req.headers['access-control-request-headers'];
+
+  res.header('Access-Control-Allow-Credentials', 'true');
 
   if (allowedCors.includes(origin)) {
     // устанавливаем заголовок, который разрешает браузеру запросы с этого источника
@@ -20,6 +23,7 @@ const cors = (req, res, next) => {
   if (method === 'OPTIONS') {
     // разрешаем кросс-доменные запросы любых типов (по умолчанию)
     res.header('Access-Control-Allow-Methods', DEFAULT_ALLOWED_METHODS);
+    res.header('Access-Control-Allow-Headers', requestHeaders);
     res.end();
   }
 

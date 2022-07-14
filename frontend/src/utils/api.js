@@ -97,7 +97,7 @@ class Api {
     }
 }
 
-const api = new Api('https://mesto.nomoreparties.co/v1/cohort-38', {
+const api = new Api('https://api.pivovarova.pro.nomoredomains.xyz', {
     headers: {
         authorization: 'e0e4f956-51a1-4eae-85fd-7abacc4211a4',
         'Accept': 'application/json',
