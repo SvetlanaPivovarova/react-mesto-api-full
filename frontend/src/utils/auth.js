@@ -38,21 +38,21 @@ export const authorize = (password, email) => {
         )
     })
         .then((response => response.json()))
-        .then((data) => {
-            if (data.token){
-                localStorage.setItem('jwt', data.token);
-                return data.token;
-            }
-        })
+        //.then((data) => {
+        //    if (data.token){
+        //        localStorage.setItem('jwt', data.token);
+        //        return data.token;
+        //    }
+       // })
 };
 
-export const checkToken = (token) => {
+export const checkToken = () => {
     return fetch(`${BASE_URL}/users/me`, {
         method: "GET",
         headers: {
             "Accept": "application/json",
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${token}`
+            //"Authorization": `Bearer ${token}`
         }
     })
         .then(res => {
