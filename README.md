@@ -3,3 +3,5 @@
 
 **Размещение проекта**
 * [Место](https://pivovarova.pro.nomoredomains.xyz/)
+* [Сервер](https://api.pivovarova.pro.nomoredomains.xyz/)
+* IP: 51.250.110.238
